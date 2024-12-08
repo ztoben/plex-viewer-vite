@@ -32,7 +32,7 @@ jobs:
         with:
           node-version: 15 # Need for npm >=7.7
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
